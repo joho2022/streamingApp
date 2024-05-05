@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeFooterCell" customModule="KTV_Practice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eon-I6-UWe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="이용약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-fn-bbR">
+                                <rect key="frame" x="28" y="10" width="35" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유료서비스 이용약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-S1-7gI">
+                                <rect key="frame" x="84" y="10" width="236" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" name="gray-2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaf-tV-V0O">
+                                <rect key="frame" x="28" y="34" width="52" height="28"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="djO-Dk-Svy">
+                                        <rect key="frame" x="0.0" y="5.6666666666666643" width="15" height="16.666666666666668"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="Cjn-rn-oae"/>
+                                            <constraint firstAttribute="height" constant="16.5" id="fsA-lV-IEW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K사" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4B-0g-Xda">
+                                        <rect key="frame" x="25" y="4" width="27" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="gray-2"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="bg"/>
+                                <constraints>
+                                    <constraint firstItem="T4B-0g-Xda" firstAttribute="leading" secondItem="djO-Dk-Svy" secondAttribute="trailing" constant="10" id="4of-eM-sB3"/>
+                                    <constraint firstItem="djO-Dk-Svy" firstAttribute="centerY" secondItem="yaf-tV-V0O" secondAttribute="centerY" id="5bW-bX-1n3"/>
+                                    <constraint firstAttribute="height" constant="28" id="NXm-76-yEd"/>
+                                    <constraint firstItem="T4B-0g-Xda" firstAttribute="centerY" secondItem="yaf-tV-V0O" secondAttribute="centerY" id="O40-RQ-sYY"/>
+                                    <constraint firstAttribute="trailing" secondItem="T4B-0g-Xda" secondAttribute="trailing" id="Ope-o2-8NL"/>
+                                    <constraint firstItem="djO-Dk-Svy" firstAttribute="leading" secondItem="yaf-tV-V0O" secondAttribute="leading" id="oHp-gV-HGs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="Anq-fn-bbR" firstAttribute="leading" secondItem="eon-I6-UWe" secondAttribute="leading" constant="28" id="Bda-pu-dpA"/>
+                            <constraint firstItem="yaf-tV-V0O" firstAttribute="leading" secondItem="eon-I6-UWe" secondAttribute="leading" constant="28" id="JGd-Ru-cfQ"/>
+                            <constraint firstItem="Anq-fn-bbR" firstAttribute="top" secondItem="eon-I6-UWe" secondAttribute="top" constant="10" id="O9p-AW-C1Q"/>
+                            <constraint firstAttribute="bottom" secondItem="yaf-tV-V0O" secondAttribute="bottom" id="UlV-z7-EOC"/>
+                            <constraint firstAttribute="trailing" secondItem="bI1-S1-7gI" secondAttribute="trailing" id="ZmI-ui-SmK"/>
+                            <constraint firstItem="bI1-S1-7gI" firstAttribute="leading" secondItem="Anq-fn-bbR" secondAttribute="trailing" constant="21" id="cOf-E7-dIJ"/>
+                            <constraint firstItem="yaf-tV-V0O" firstAttribute="top" secondItem="Anq-fn-bbR" secondAttribute="bottom" constant="12" id="dfX-3V-EEF"/>
+                            <constraint firstItem="bI1-S1-7gI" firstAttribute="top" secondItem="eon-I6-UWe" secondAttribute="top" constant="10" id="du9-g2-dwC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="bg"/>
+                <constraints>
+                    <constraint firstItem="eon-I6-UWe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="OOE-pO-OMC"/>
+                    <constraint firstItem="eon-I6-UWe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Uzi-oA-Tfc"/>
+                    <constraint firstAttribute="bottom" secondItem="eon-I6-UWe" secondAttribute="bottom" constant="18" id="iMN-mp-JDh"/>
+                    <constraint firstAttribute="trailing" secondItem="eon-I6-UWe" secondAttribute="trailing" id="qgG-cH-Uic"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="129.7709923664122" y="-12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="24" height="29"/>
+        <namedColor name="bg">
+            <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-2">
+            <color red="0.65490196078431373" green="0.65490196078431373" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
