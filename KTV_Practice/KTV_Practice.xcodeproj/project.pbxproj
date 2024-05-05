@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D62A518C2BE7534E00FD0F00 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */; };
+		D62A518D2BE7534E00FD0F00 /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */; };
 		D6C163732BE345420004C56C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163722BE345420004C56C /* AppDelegate.swift */; };
 		D6C163752BE345420004C56C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163742BE345420004C56C /* SceneDelegate.swift */; };
 		D6C163772BE345420004C56C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163762BE345420004C56C /* LoginViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
 		D6C1636F2BE345420004C56C /* KTV_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTV_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C163722BE345420004C56C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C163742BE345420004C56C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 			children = (
 				D6C163AA2BE34DB30004C56C /* HomeVideoCell.swift */,
 				D6C163AB2BE34DB30004C56C /* HomeVideoCell.xib */,
+				D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */,
+				D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				D6C1637F2BE345430004C56C /* Base in Resources */,
 				D6C163AD2BE34DB30004C56C /* HomeVideoCell.xib in Resources */,
 				D6C1637A2BE345420004C56C /* Base in Resources */,
+				D62A518D2BE7534E00FD0F00 /* HomeHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C163772BE345420004C56C /* LoginViewController.swift in Sources */,
+				D62A518C2BE7534E00FD0F00 /* HomeHeaderCell.swift in Sources */,
 				D6C163732BE345420004C56C /* AppDelegate.swift in Sources */,
 				D6C163AF2BE351C80004C56C /* HomeSection.swift in Sources */,
 				D6C163752BE345420004C56C /* SceneDelegate.swift in Sources */,
