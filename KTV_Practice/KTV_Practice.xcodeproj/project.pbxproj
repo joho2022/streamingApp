@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		D62A518C2BE7534E00FD0F00 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */; };
 		D62A518D2BE7534E00FD0F00 /* HomeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */; };
+		D62A51902BE761D000FD0F00 /* HomeRecommendContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A518E2BE761D000FD0F00 /* HomeRecommendContainerCell.swift */; };
+		D62A51912BE761D000FD0F00 /* HomeRecommendContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62A518F2BE761D000FD0F00 /* HomeRecommendContainerCell.xib */; };
+		D62A51942BE7643800FD0F00 /* HomeRecommendItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A51922BE7643800FD0F00 /* HomeRecommendItemCell.swift */; };
+		D62A51952BE7643800FD0F00 /* HomeRecommendItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62A51932BE7643800FD0F00 /* HomeRecommendItemCell.xib */; };
+		D62A51982BE7AABE00FD0F00 /* HomeFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A51962BE7AABE00FD0F00 /* HomeFooterCell.swift */; };
+		D62A51992BE7AABE00FD0F00 /* HomeFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62A51972BE7AABE00FD0F00 /* HomeFooterCell.xib */; };
+		D67F02262BE7B0B100A40E96 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67F02252BE7B0B100A40E96 /* HomeViewModel.swift */; };
 		D6C163732BE345420004C56C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163722BE345420004C56C /* AppDelegate.swift */; };
 		D6C163752BE345420004C56C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163742BE345420004C56C /* SceneDelegate.swift */; };
 		D6C163772BE345420004C56C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C163762BE345420004C56C /* LoginViewController.swift */; };
@@ -46,6 +53,13 @@
 /* Begin PBXFileReference section */
 		D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
 		D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderCell.xib; sourceTree = "<group>"; };
+		D62A518E2BE761D000FD0F00 /* HomeRecommendContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendContainerCell.swift; sourceTree = "<group>"; };
+		D62A518F2BE761D000FD0F00 /* HomeRecommendContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecommendContainerCell.xib; sourceTree = "<group>"; };
+		D62A51922BE7643800FD0F00 /* HomeRecommendItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecommendItemCell.swift; sourceTree = "<group>"; };
+		D62A51932BE7643800FD0F00 /* HomeRecommendItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeRecommendItemCell.xib; sourceTree = "<group>"; };
+		D62A51962BE7AABE00FD0F00 /* HomeFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterCell.swift; sourceTree = "<group>"; };
+		D62A51972BE7AABE00FD0F00 /* HomeFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFooterCell.xib; sourceTree = "<group>"; };
+		D67F02252BE7B0B100A40E96 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D6C1636F2BE345420004C56C /* KTV_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KTV_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C163722BE345420004C56C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C163742BE345420004C56C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67F02242BE7B09A00A40E96 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D6C163762BE345420004C56C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		D6C163662BE345420004C56C = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +137,11 @@
 		D6C163712BE345420004C56C /* KTV_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				D6C163B02BE3555F0004C56C /* TabBarController.swift */,
+				D67F02242BE7B09A00A40E96 /* Login */,
 				D6C163A62BE34D3D0004C56C /* Home */,
 				D6C163722BE345420004C56C /* AppDelegate.swift */,
 				D6C163742BE345420004C56C /* SceneDelegate.swift */,
-				D6C163762BE345420004C56C /* LoginViewController.swift */,
 				D6C163782BE345420004C56C /* Main.storyboard */,
 				D6C1637B2BE345430004C56C /* Assets.xcassets */,
 				D6C163A42BE3491E0004C56C /* Color.xcassets */,
@@ -150,8 +173,8 @@
 			children = (
 				D6C163A92BE34D990004C56C /* Cell */,
 				D6C163A72BE34D500004C56C /* HomeViewController.swift */,
+				D67F02252BE7B0B100A40E96 /* HomeViewModel.swift */,
 				D6C163AE2BE351C80004C56C /* HomeSection.swift */,
-				D6C163B02BE3555F0004C56C /* TabBarController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -163,6 +186,12 @@
 				D6C163AB2BE34DB30004C56C /* HomeVideoCell.xib */,
 				D62A518A2BE7534E00FD0F00 /* HomeHeaderCell.swift */,
 				D62A518B2BE7534E00FD0F00 /* HomeHeaderCell.xib */,
+				D62A518E2BE761D000FD0F00 /* HomeRecommendContainerCell.swift */,
+				D62A518F2BE761D000FD0F00 /* HomeRecommendContainerCell.xib */,
+				D62A51922BE7643800FD0F00 /* HomeRecommendItemCell.swift */,
+				D62A51932BE7643800FD0F00 /* HomeRecommendItemCell.xib */,
+				D62A51962BE7AABE00FD0F00 /* HomeFooterCell.swift */,
+				D62A51972BE7AABE00FD0F00 /* HomeFooterCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -272,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C1637C2BE345430004C56C /* Assets.xcassets in Resources */,
+				D62A51912BE761D000FD0F00 /* HomeRecommendContainerCell.xib in Resources */,
 				D6C163A52BE3491E0004C56C /* Color.xcassets in Resources */,
+				D62A51992BE7AABE00FD0F00 /* HomeFooterCell.xib in Resources */,
 				D6C1637F2BE345430004C56C /* Base in Resources */,
+				D62A51952BE7643800FD0F00 /* HomeRecommendItemCell.xib in Resources */,
 				D6C163AD2BE34DB30004C56C /* HomeVideoCell.xib in Resources */,
 				D6C1637A2BE345420004C56C /* Base in Resources */,
 				D62A518D2BE7534E00FD0F00 /* HomeHeaderCell.xib in Resources */,
@@ -302,9 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C163772BE345420004C56C /* LoginViewController.swift in Sources */,
+				D62A51982BE7AABE00FD0F00 /* HomeFooterCell.swift in Sources */,
+				D62A51902BE761D000FD0F00 /* HomeRecommendContainerCell.swift in Sources */,
+				D62A51942BE7643800FD0F00 /* HomeRecommendItemCell.swift in Sources */,
 				D62A518C2BE7534E00FD0F00 /* HomeHeaderCell.swift in Sources */,
 				D6C163732BE345420004C56C /* AppDelegate.swift in Sources */,
 				D6C163AF2BE351C80004C56C /* HomeSection.swift in Sources */,
+				D67F02262BE7B0B100A40E96 /* HomeViewModel.swift in Sources */,
 				D6C163752BE345420004C56C /* SceneDelegate.swift in Sources */,
 				D6C163B12BE3555F0004C56C /* TabBarController.swift in Sources */,
 				D6C163AC2BE34DB30004C56C /* HomeVideoCell.swift in Sources */,
