@@ -35,8 +35,13 @@ extension Home {
     }
     
     struct Ranking: Decodable {
-        let imageUrl: URL
+        let thumbnailImageUrl: URL
         let videoId: Int
+        
+        enum CodingKeys: String, CodingKey {
+            case thumbnailImageUrl = "imageUrl"
+            case videoId
+        }
     }
     
     struct Recommend: Decodable {

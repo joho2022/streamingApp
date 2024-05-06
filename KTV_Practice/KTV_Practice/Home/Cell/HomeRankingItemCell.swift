@@ -32,6 +32,6 @@ class HomeRankingItemCell: UICollectionViewCell {
     
     func setRank(_ data: Home.Ranking, rank: Int) {
         self.numberLabel.text = "\(rank)"
-        self.imageTask = self.thumbnailImageView.loadImage(url: data.imageUrl)
+        self.imageTask = self.thumbnailImageView.loadImage(url: data.thumbnailImageUrl)
     }
 }

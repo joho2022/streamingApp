@@ -163,6 +163,7 @@
 		D67F02442BE7EB8300A40E96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D67F02482BE89A7000A40E96 /* HomeViewModel.swift */,
 				D67F02422BE7EB7C00A40E96 /* Home.swift */,
 			);
 			path = Model;
@@ -248,7 +249,6 @@
 			children = (
 				D6C163A92BE34D990004C56C /* Cell */,
 				D6C163A72BE34D500004C56C /* HomeViewController.swift */,
-				D67F02482BE89A7000A40E96 /* HomeViewModel.swift */,
 				D6C163AE2BE351C80004C56C /* HomeSection.swift */,
 			);
 			path = Home;
