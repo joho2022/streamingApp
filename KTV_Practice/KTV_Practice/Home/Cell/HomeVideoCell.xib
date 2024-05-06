@@ -17,15 +17,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="320"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-H1-kQG">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-H1-kQG">
                         <rect key="frame" x="21" y="0.0" width="351" height="300"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-6T-vaI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IK5-yX-Ldz">
                                 <rect key="frame" x="0.0" y="0.0" width="351" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rnu-6T-vaI">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="ZUR-Gy-YNz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="more-bk"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="ZUR-Gy-YNz"/>
+                                    <constraint firstItem="Rnu-6T-vaI" firstAttribute="top" secondItem="IK5-yX-Ldz" secondAttribute="top" id="AkQ-sd-uZT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rnu-6T-vaI" secondAttribute="trailing" id="fvF-Pg-c7a"/>
+                                    <constraint firstItem="Rnu-6T-vaI" firstAttribute="leading" secondItem="IK5-yX-Ldz" secondAttribute="leading" id="nnM-O8-4sI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rnu-6T-vaI" secondAttribute="bottom" id="qAA-rY-mjb"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fES-5c-5bz">
                                 <rect key="frame" x="0.0" y="160" width="351" height="1"/>
                                 <color key="backgroundColor" name="stroke-light"/>
@@ -71,9 +83,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMw-Yf-fwz">
                                 <rect key="frame" x="35" y="239" width="281" height="40"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WIb-gM-mH6">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="WIb-gM-mH6">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <color key="backgroundColor" name="gray-1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="6wb-Dq-5lA"/>
                                         </constraints>
@@ -113,20 +124,19 @@
                         </subviews>
                         <color key="backgroundColor" name="bg"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IK5-yX-Ldz" secondAttribute="trailing" id="25F-Tk-iOB"/>
+                            <constraint firstItem="IK5-yX-Ldz" firstAttribute="leading" secondItem="Dya-H1-kQG" secondAttribute="leading" id="2pI-cF-WbD"/>
                             <constraint firstItem="fES-5c-5bz" firstAttribute="leading" secondItem="Dya-H1-kQG" secondAttribute="leading" id="4CQ-Ei-jew"/>
-                            <constraint firstItem="7CZ-jF-h0d" firstAttribute="top" secondItem="Rnu-6T-vaI" secondAttribute="bottom" constant="21" id="9i9-YK-Pug"/>
-                            <constraint firstItem="Rnu-6T-vaI" firstAttribute="top" secondItem="Dya-H1-kQG" secondAttribute="top" id="Dti-cA-L4F"/>
                             <constraint firstAttribute="trailing" secondItem="pNG-CH-xQg" secondAttribute="trailing" constant="35" id="EN3-pa-Oug"/>
                             <constraint firstAttribute="trailing" secondItem="pMw-Yf-fwz" secondAttribute="trailing" constant="35" id="Kz3-2t-AzW"/>
                             <constraint firstItem="pMw-Yf-fwz" firstAttribute="leading" secondItem="Dya-H1-kQG" secondAttribute="leading" constant="35" id="MUI-YU-5Kd"/>
+                            <constraint firstItem="IK5-yX-Ldz" firstAttribute="top" secondItem="Dya-H1-kQG" secondAttribute="top" id="PiA-ZG-ny9"/>
                             <constraint firstAttribute="trailing" secondItem="fES-5c-5bz" secondAttribute="trailing" id="TMJ-KY-CPy"/>
                             <constraint firstAttribute="bottom" secondItem="pMw-Yf-fwz" secondAttribute="bottom" constant="21" id="Y3o-lK-PLa"/>
-                            <constraint firstItem="Rnu-6T-vaI" firstAttribute="baseline" secondItem="fES-5c-5bz" secondAttribute="firstBaseline" id="cLK-gj-5Jk"/>
                             <constraint firstAttribute="trailing" secondItem="7CZ-jF-h0d" secondAttribute="trailing" constant="35" id="gCR-7s-IEj"/>
-                            <constraint firstAttribute="trailing" secondItem="Rnu-6T-vaI" secondAttribute="trailing" id="gya-0G-bzl"/>
-                            <constraint firstItem="Rnu-6T-vaI" firstAttribute="leading" secondItem="Dya-H1-kQG" secondAttribute="leading" id="j3E-vb-qxE"/>
                             <constraint firstAttribute="bottom" secondItem="pNG-CH-xQg" secondAttribute="bottom" constant="21" id="kbd-I4-JCi"/>
                             <constraint firstItem="7CZ-jF-h0d" firstAttribute="leading" secondItem="Dya-H1-kQG" secondAttribute="leading" constant="35" id="p8X-QI-gbf"/>
+                            <constraint firstItem="7CZ-jF-h0d" firstAttribute="top" secondItem="fES-5c-5bz" secondAttribute="bottom" constant="20" id="rX1-1z-1n8"/>
                             <constraint firstItem="pMw-Yf-fwz" firstAttribute="top" secondItem="7CZ-jF-h0d" secondAttribute="bottom" constant="14" id="z9o-X3-EP0"/>
                         </constraints>
                     </view>
@@ -156,14 +166,15 @@
     <resources>
         <image name="favorite" width="20" height="20"/>
         <image name="hot" width="45" height="20"/>
+        <image name="user" width="14" height="14"/>
         <namedColor name="bg">
             <color red="0.10588235294117647" green="0.10588235294117647" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="gray-1">
-            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="main-wh">
             <color red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="more-bk">
+            <color red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="stroke-light">
             <color red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
